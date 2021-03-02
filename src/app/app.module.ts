@@ -7,11 +7,13 @@ import { BitcoinTrackerComponent } from './bitcoin-tracker/bitcoin-tracker.compo
 import { BitcoinTrackerService } from './bitcoin-tracker/bitcoin-tracker.service';
 
 import { HttpClientModule } from '@angular/common/http';
+import { PaginatorComponent } from './bitcoin-tracker/paginator/paginator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BitcoinTrackerComponent
+    BitcoinTrackerComponent,
+    PaginatorComponent
   ],
   imports: [
     BrowserModule,

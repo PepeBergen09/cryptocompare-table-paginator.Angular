@@ -13,6 +13,5 @@ export class BitcoinTrackerService {
 
   getBitcoinData(){
     return this.http.get<any>(this.baseurl);
-
   }
 }

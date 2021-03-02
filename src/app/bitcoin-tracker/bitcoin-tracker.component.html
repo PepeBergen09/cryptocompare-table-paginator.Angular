@@ -7,6 +7,7 @@
       <table class="table">
         <thead>
           <tr>
+
             <th scope="col">Time</th>
             <th scope="col">High</th>
             <th scope="col">Low</th>
@@ -19,7 +20,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let data of bitcoinData">
+          <tr *ngFor="let data of bitcoinData.slice(startIndex,endIndex)">
 
             <td>{{data.time}}</td>
             <td>{{data.high}}</td>
@@ -35,6 +36,14 @@
       </table>
 
     </div>
+
+    </div>
+    <div class="row">
+      <div class="col-10">
+        <div class="float-right">
+          <app-paginator [pages]="pages"></app-paginator>
+        </div>
+      </div>
     </div>
   </div>
 
